@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../jquery-3.5.1.js" ></script>
+</head>
+<body>
+    <label> mi valor </label>
+    <input type="checkbox" id="michecbox" name="">
+</body>
+</html>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('#michecbox').prop("checked",true);
+    $('#michecbox').click(function(){
+        if($('#michecbox').is(':checked')){
+            alert('esta chequeado el control ');
+        }else{
+            alert ('no esta check tu control ');
+        }
+    });
+    });
+</script>
